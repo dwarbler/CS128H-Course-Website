@@ -15,7 +15,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #2f4b8e;
   text-decoration: inherit;
 }
 a:hover {
@@ -46,10 +46,39 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  position: relative;
 }
-button:hover {
-  border-color: #646cff;
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
+
+button:hover::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), transparent 60%, #2f4b8e);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 8px;
+  animation: 3s spin linear infinite;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -87,5 +116,5 @@ button:focus-visible {
 }
 
 .welcomeCard:hover {
-  box-shadow: 0 0 2rem #646cffaa;
+  box-shadow: 0 0 2rem #e56e15;
 }
