@@ -5,7 +5,7 @@ function WelcomeCard() {
         <div className="welcomeCard">
             <img className="logo" src={courseLogo} alt="CS128H Logo Image"></img>
             <h2>Welcome to CS128H</h2>
-            <h3>For Students, by Students</h3>
+            <button>Access the Site</button>
         </div>
     )
 }

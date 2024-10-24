@@ -75,21 +75,17 @@ button:focus-visible {
   transition: filter 300ms;
 }
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
 .welcomeCard {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px;
-  padding: 0px 30px 0px 30px;
+  padding: 0px 30px 20px 30px;
   flex-direction: column;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 5px #181818;
+}
+
+.welcomeCard:hover {
+  box-shadow: 0 0 2rem #646cffaa;
 }
