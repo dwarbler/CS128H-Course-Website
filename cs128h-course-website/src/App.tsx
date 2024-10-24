@@ -1,10 +1,8 @@
-import './App.css'
+import WelcomeCard  from "./WelcomeCard.tsx"
 
 function App() {
-
   return (
-    <>
-    </>
+    <WelcomeCard />
   )
 }
 
