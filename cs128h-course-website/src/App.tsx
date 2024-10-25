@@ -1,10 +1,12 @@
 import WelcomeCard  from "./WelcomeCard.tsx"
+import Navbar from "./Navbar.tsx"
 
 function App() {
   return (
-    <body>
+    <>
+      <Navbar />
       <WelcomeCard />
-    </body>
+    </>
   )
 }
 
