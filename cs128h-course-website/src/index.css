@@ -251,9 +251,12 @@ a {
   color: var(--text-50);
   text-decoration: inherit;
   padding: 0.5rem 1rem;
-  border-radius: 4px;
   width: fit-content;
   text-align: center;
+}
+
+a:hover {
+  border-bottom: 2px solid var(--text-50);
 }
 
 .navBar {
