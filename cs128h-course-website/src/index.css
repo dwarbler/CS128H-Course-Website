@@ -280,7 +280,7 @@ a:hover {
   align-items: center;
   min-width: fit-content;
   width: 80vw;
-  height: 40px;
+  height: 4vh;
   padding: 0.5rem;
   background-color: var(--text);
   border-radius: 8px;
@@ -307,5 +307,5 @@ a:hover {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  height: 70vh;
+  height: 75vh;
 }
