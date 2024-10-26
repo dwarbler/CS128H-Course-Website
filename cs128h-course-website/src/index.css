@@ -275,7 +275,7 @@ a:hover::after {
 
 .navBar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   width: 100vw;
@@ -284,6 +284,18 @@ a:hover::after {
   left: 0;
   padding: 0.5rem;
   border-bottom: 1px solid var(--background-400);
+}
+
+.menuContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.logo {
+  object-fit: scale-down;
+  width: 40px;
 }
 
 .links {
