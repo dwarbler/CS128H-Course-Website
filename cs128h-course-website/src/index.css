@@ -244,67 +244,39 @@ button:focus-visible {
 }
 
 a {
-  font-weight: 500;
-  color: var(--text);
+  font-weight: 600;
+  color: var(--text-50);
   text-decoration: inherit;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  width: 90px;
-  background-color: var(--background);
+  width: fit-content;
   text-align: center;
   position: relative;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 .navBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: fixed; */
-  width: 100vw;
+  min-width: fit-content;
+  width: 80vw;
   height: 40px;
-  /* top: 0; */
-  /* left: 0; */
   padding: 0.5rem;
-  border-bottom: 1px solid var(--background-400);
-}
-
-.menuContainer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 10px;
-}
-
-.logo {
-  object-fit: scale-down;
-  width: 40px;
+  background-color: var(--text);
+  border-radius: 8px;
+  margin-top: 2vh;
 }
 
 .links {
   display: flex;
-  flex-direction: row;
-}
-
-.burger {
-  cursor: pointer;
-  font-size: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-.links {
-  display: none;
+  justify-content: flex-start;
   align-items: center;
-  padding: 0.5rem;
-  z-index: 1000;
-}
-
-.links.active {
-  display: flex;
+  height: 100%;
 }
 
 .logo {
-  height: 6em;
+  height: 100%;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
