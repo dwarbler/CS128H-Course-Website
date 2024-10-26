@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Kosugi:700|Kosugi:400');
 @media (prefers-color-scheme: light) {
   :root {
     --text: #000000;
@@ -155,8 +156,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Kosugi:700|Kosugi:400');
 
 body {
   font-family: 'Kosugi';
