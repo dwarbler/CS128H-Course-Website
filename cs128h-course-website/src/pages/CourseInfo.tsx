@@ -1,11 +1,11 @@
 import Navbar from "../components/Navbar"
-import Hero from "../components/Hero"
+import Info from "../components/Info"
 
 export default function CourseInfo(): JSX.Element {
     return (
         <>
             <Navbar />
-            <Hero />
+            <Info />
         </>
     )
 }
