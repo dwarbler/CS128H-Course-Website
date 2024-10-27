@@ -1,4 +1,4 @@
-import courseLogo from "./assets/logo.png"
+import courseLogo from "../assets/logo.png"
 
 export default function Navbar(): JSX.Element {
     return (
