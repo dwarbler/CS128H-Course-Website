@@ -195,11 +195,6 @@ h5 {
   font-size: 1.333rem; /* 21.28px */
 }
 
-p {
-  max-width: 80vw;
-  margin: 10px;
-}
-
 small {font-size: 0.750rem; /* 12px */}
 
 body {
@@ -290,21 +285,23 @@ a:hover {
   font-size: 1em;
   padding: 1rem;
   border-radius: 8px;
+  border-width: 0px;
   margin-top: 2vh;
   box-shadow: 4px 4px var(--background-100);
 }
 
 .collapsibleShown {
   border-radius: 8px 8px 0 0;
-  box-shadow: 4px 0 4px -4 red;
 }
 
 .content {
   display: none;
   background-color: var(--background-100);
   width: 100%;
+  min-width: fit-content;
   height: fit-content;
   text-align: left;
+  box-shadow: 4px 4px var(--background-100);
 }
 
 .contentShown {
@@ -315,5 +312,10 @@ a:hover {
   }
   h5 {
     margin: 10px;
+  }
+  p {
+    max-width: 80vw;
+    margin: 0px;
+    padding: 8px;
   }
 }
