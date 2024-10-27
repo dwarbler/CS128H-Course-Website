@@ -34,6 +34,10 @@ export default function Policies(): JSX.Element {
                 </tr>
             </table>
 
+            <p>
+                <i>Note</i>: CS128Honors follows satisfactory/unsatisfactory (S/U) grading. Students must receieve at minimum a 70% (C-) to receieve a satisfactory grade. We may lower, but not raise, the cutoff for SU credit.
+            </p>
+
             <h4>Extension Policy</h4>
 
             <p>

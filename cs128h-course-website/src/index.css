@@ -195,6 +195,11 @@ h5 {
   font-size: 1.333rem; /* 21.28px */
 }
 
+i {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
 small {font-size: 0.750rem; /* 12px */}
 
 body {
