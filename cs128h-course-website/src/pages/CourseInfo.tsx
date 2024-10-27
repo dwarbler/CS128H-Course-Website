@@ -1,11 +1,15 @@
 import Navbar from "../components/Navbar"
-import Info from "../components/Info"
+import Collapsible from "../components/Collapsible"
+import Syllabus from "../components/Syllabus"
 
 export default function CourseInfo(): JSX.Element {
     return (
         <>
             <Navbar />
-            <Info />
+            <Collapsible
+                title={"Syllabus"}
+                BodyComponent={<Syllabus />} 
+            />
         </>
     )
 }

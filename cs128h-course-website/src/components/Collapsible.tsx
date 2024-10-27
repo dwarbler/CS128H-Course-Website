@@ -1,0 +1,23 @@
+import { useState } from "react"
+
+export interface CollapisbleAtts {
+    title: string,
+    BodyComponent: JSX.Element,
+}
+
+export default function Collapsible({title, BodyComponent}: CollapisbleAtts): JSX.Element {
+    const [active, setActive] = useState(false);
+
+    function changeState() {
+        setActive(!active);
+    }
+
+    return (
+        <>
+            <button className={`${active ? 'collapsible' : 'collapsibleShown'}`} onClick={changeState}>{title}</button>
+            <div className={`${active ? 'content' : 'contentShown'}`}>
+                {BodyComponent}
+            </div>
+        </>
+    )
+}

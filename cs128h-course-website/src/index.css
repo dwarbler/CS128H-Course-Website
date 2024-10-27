@@ -220,40 +220,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
-  position: relative;
-}
-
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-@keyframes spin {
-  from {
-    --angle: 0deg;
-  }
-  to {
-    --angle: 360deg;
-  }
-}
-
-button:hover::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: conic-gradient(from var(--angle), transparent 60%, var(--accent));
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: -1;
-  padding: 3px;
-  border-radius: 8px;
-  animation: 3s spin linear infinite;
 }
 
 button:focus,
@@ -308,4 +275,33 @@ a:hover {
   align-items: flex-start;
   justify-content: center;
   height: 75vh;
+}
+
+.collapsible {
+  background-color: var(--background-800);
+  color: var(--text);
+  cursor: pointer;
+  width: 80vw;
+  height: 5vh;
+  text-align: left;
+  outline: none;
+  font-size: 1em;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.collapsibleShown {
+  border-radius: 8px 8px 0 0;
+}
+
+.content {
+  width: 80vh;
+  height: fit-content;
+  text-align: left;
+  display: none;
+  padding: 0.5rem;
+}
+
+.contentShown {
+  display: block;
 }
