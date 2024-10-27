@@ -10,6 +10,14 @@ import NoPage from './pages/NoPage.tsx'
 
 import './index.css'
 
+/**
+ * Utilizes React BrowserRouter to navigate through the various pages
+ * which are linked in the Navbar component.
+ * 
+ * This allows for the site to be a single page application (best
+ * fit for the Vite build system) while having more than one page
+ */
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
