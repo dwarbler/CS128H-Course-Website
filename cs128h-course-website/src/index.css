@@ -193,7 +193,11 @@ h4 {
 
 h5 {
   font-size: 1.333rem; /* 21.28px */
-  text-align: center;
+}
+
+p {
+  max-width: 80vw;
+  margin: 10px;
 }
 
 small {font-size: 0.750rem; /* 12px */}
@@ -221,11 +225,6 @@ button {
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 a {
@@ -278,30 +277,43 @@ a:hover {
 }
 
 .collapsible {
-  background-color: var(--background-800);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--background-200);
   color: var(--text);
   cursor: pointer;
-  width: 80vw;
+  width: 100%;
+  min-width: fit-content;
   height: 5vh;
-  text-align: left;
   outline: none;
   font-size: 1em;
-  padding: 1em;
+  padding: 1rem;
   border-radius: 8px;
+  margin-top: 2vh;
+  box-shadow: 4px 4px var(--background-100);
 }
 
 .collapsibleShown {
   border-radius: 8px 8px 0 0;
+  box-shadow: 4px 0 4px -4 red;
 }
 
 .content {
-  width: 80vh;
+  display: none;
+  background-color: var(--background-100);
+  width: 100%;
   height: fit-content;
   text-align: left;
-  display: none;
-  padding: 0.5rem;
 }
 
 .contentShown {
   display: block;
+  h4 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  h5 {
+    margin: 10px;
+  }
 }

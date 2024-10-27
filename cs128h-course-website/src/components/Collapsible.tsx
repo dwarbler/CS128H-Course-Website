@@ -14,8 +14,8 @@ export default function Collapsible({title, BodyComponent}: CollapisbleAtts): JS
 
     return (
         <>
-            <button className={`${active ? 'collapsible' : 'collapsibleShown'}`} onClick={changeState}>{title}</button>
-            <div className={`${active ? 'content' : 'contentShown'}`}>
+            <button className={`collapsible ${active ? 'collapsibleShown' : ''}`} onClick={changeState}>{title}</button>
+            <div className={`content ${active ? 'contentShown' : ''}`}>
                 {BodyComponent}
             </div>
         </>
