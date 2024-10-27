@@ -301,6 +301,7 @@ a:hover {
   height: fit-content;
   text-align: left;
   border-radius: 0 0 8px 8px;
+  padding-bottom: 5px;
   box-shadow: 4px 4px var(--background-50);
 }
 

@@ -56,6 +56,13 @@ export default function Syllabus(): JSX.Element {
             <p>
                 Machine problems (MPs) are individual projects that students will complete over the course of the semester. While you may discuss machine problems at a high level with other students, you may not share code or divide work among multiple students. Students should expect to spend around 1.5-2 hours completing MP assignments. If you find yourself spending more than 4 hours on an MP, please contact a member of the course staff. Students will have around a week and a half to complete MP assignments for full credit.
             </p>
+
+            <h5>Expected Weekly Time Commitment</h5>
+            <ol>
+                <li>Lesson Videos - 1 Hour</li>
+                <li>Homework - 30 Minutes</li>
+                <li>Machine Problems - 1-2 Hours</li>
+            </ol>
         </>
     )
 }
