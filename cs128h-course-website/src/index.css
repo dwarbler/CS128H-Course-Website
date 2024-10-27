@@ -246,7 +246,7 @@ a:hover {
   background-color: var(--text);
   border-radius: 8px;
   margin-top: 2vh;
-  box-shadow: 4px 4px var(--background-100);
+  box-shadow: 4px 4px var(--background-50);
 }
 
 .links {
@@ -285,9 +285,8 @@ a:hover {
   font-size: 1em;
   padding: 1rem;
   border-radius: 8px;
-  border-width: 0px;
   margin-top: 2vh;
-  box-shadow: 4px 4px var(--background-100);
+  box-shadow: 4px 4px var(--background-50);
 }
 
 .collapsibleShown {
@@ -301,11 +300,13 @@ a:hover {
   min-width: fit-content;
   height: fit-content;
   text-align: left;
-  box-shadow: 4px 4px var(--background-100);
+  border-radius: 0 0 8px 8px;
+  box-shadow: 4px 4px var(--background-50);
 }
 
 .contentShown {
   display: block;
+  align-items: center;
   h4 {
     margin-top: 0px;
     margin-bottom: 20px;
@@ -317,5 +318,16 @@ a:hover {
     max-width: 80vw;
     margin: 0px;
     padding: 8px;
+  }
+  blockquote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-300);
+    margin: 0px;
+    max-width: 80vw;
+    border-left: 8px solid var(--accent);
+    padding-right: 8px;
   }
 }
