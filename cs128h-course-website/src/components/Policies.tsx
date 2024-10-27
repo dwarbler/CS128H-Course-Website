@@ -1,6 +1,39 @@
 export default function Policies(): JSX.Element {
     return (
         <>
+            <h4>Grading Procedure</h4>
+            <table>
+                <tr>
+                    <td>Category</td>
+                    <td>Description</td>
+                    <td>Weight</td>
+                </tr>
+
+                <tr>
+                    <td>HW</td>
+                    <td>Performance on homework assignments</td>
+                    <td>20%</td>
+                </tr>
+
+                <tr>
+                    <td>Machine Problems</td>
+                    <td>Performance on Machine Problems (MPs)</td>
+                    <td>50%</td>
+                </tr>
+
+                <tr>
+                    <td>Final Project</td>
+                    <td>Project performance is graded on functionality, code style and use of Rust topics (like parallelism, ownership, etc.) when needed</td>
+                    <td>30%</td>
+                </tr>
+
+                <tr>
+                    <td>Extra Credit</td>
+                    <td>Many different opportunities</td>
+                    <td>10% (capped)</td>
+                </tr>
+            </table>
+
             <h4>Extension Policy</h4>
 
             <p>
