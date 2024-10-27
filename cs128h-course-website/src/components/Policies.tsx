@@ -1,4 +1,10 @@
 export default function Policies(): JSX.Element {
+    /**
+     * Returns the JSX for the Policies section of the
+     * Course Info page
+     * 
+     * @returns The section JSX
+     */
     return (
         <>
             <h4>Grading Procedure</h4>

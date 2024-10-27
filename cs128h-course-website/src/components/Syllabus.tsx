@@ -1,4 +1,10 @@
 export default function Syllabus(): JSX.Element {
+    /**
+     * Returns the JSX for the Syllabus section of the
+     * Course Info page
+     * 
+     * @returns The section JSX
+     */
     return (
         <>
             <h4>Overview</h4>

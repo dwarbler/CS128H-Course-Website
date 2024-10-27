@@ -1,4 +1,10 @@
 export default function Usefullinks(): JSX.Element {
+    /**
+     * Returns the JSX for the Useful Links section of the
+     * Course Info page
+     * 
+     * @returns The section JSX
+     */
     return (
         <>
             <h4>Class Links</h4>
