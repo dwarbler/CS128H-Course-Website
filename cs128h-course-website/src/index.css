@@ -310,6 +310,7 @@ a:hover {
   h4 {
     margin-top: 0px;
     margin-bottom: 20px;
+    color: var(--accent-400);
   }
   h5 {
     margin: 10px;
@@ -329,5 +330,9 @@ a:hover {
     max-width: 80vw;
     border-left: 8px solid var(--accent);
     padding-right: 8px;
+  }
+  a {
+    padding: 0;
+    color: var(--secondary);
   }
 }
