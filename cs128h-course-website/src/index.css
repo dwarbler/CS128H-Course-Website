@@ -302,7 +302,7 @@ a:hover {
   transition: filter 300ms;
 }
 
-.welcomePage {
+.hero {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
