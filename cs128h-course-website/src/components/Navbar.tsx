@@ -14,11 +14,11 @@ export default function Navbar(): JSX.Element {
         <nav className="navBar">
             <img className="logo" src={courseLogo} alt="CS128H Logo"></img>
             <div className="links">
-                <Link to="/">Home</Link>
-                <Link to="/CourseInfo">Course Info</Link>
-                <Link to="/Lectures">Lectures</Link>
-                <Link to="/Grades">Grades</Link>
-                <Link to="/Staff">Staff</Link>
+                <Link to="/">home()</Link>
+                <Link to="/CourseInfo">course_info()</Link>
+                <Link to="/Lectures">lectures()</Link>
+                <Link to="/Grades">grades()</Link>
+                <Link to="/Staff">staff()</Link>
             </div>
         </nav>
     )
