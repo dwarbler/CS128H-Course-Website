@@ -1,3 +1,8 @@
+[
 {
-    "name": "Derek"
+    "name": "Derek",
+    "id": 1,
+    "image": "images/derek_staff_image.jpg",
+    "description": "I'm da best"
 }
+]

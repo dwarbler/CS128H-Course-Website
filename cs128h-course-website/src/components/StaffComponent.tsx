@@ -1,25 +1,26 @@
-import { useEffect, useState } from "react"
+import Collapsible from "./Collapsible"
+
+import data from "../assets/staff/staff.json"
 
 export default function StaffComponent(): JSX.Element {
-    const [data, setData] = useState(null);
-
-    useEffect(() => {
-        fetch("../assets/staff/staff.json")
-            .then(response => response.json())
-            .then(data => setData(data))
-            .catch(error => console.error("Failed to retrieve staff data: ", error))
-    }, [])
-
-    if (!data) {
-        return ( 
-            <div>
-                Loading...
-            </div>
-        )
-    }
 
     return (
         <>
+            <div className="staffComponent">
+                {
+                    data.map(staff => (
+                        <>
+                            <div className="staff">
+                                <img key={staff.id} src={`/src/assets/staff/${staff.image}`} alt="Derek Staff Image"/>
+                                <Collapsible
+                                    title={`${staff.name}`}
+                                    BodyComponent={<p>${staff.description}</p>}
+                                />
+                            </div>
+                        </>
+                    ))
+                }
+            </div>
         </>
     )
 }
