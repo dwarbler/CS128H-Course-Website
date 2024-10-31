@@ -9,8 +9,8 @@ export default function StaffComponent(): JSX.Element {
                     data.map(staff => (
                         <>
                             <div className="staff">
-                                <img key={staff.id} src={`/src/assets/staff/${staff.image}`} alt="Derek Staff Image" className="staffPicture" />
-                                <p>{staff.description}</p>
+                                <img key={staff.id} src={`/src/assets/staff/${staff.image}`} alt={`${staff.name} image`} className="staffPicture" />
+                                <p className="staffDescription">{staff.description}</p>
                             </div>
                         </>
                     ))
