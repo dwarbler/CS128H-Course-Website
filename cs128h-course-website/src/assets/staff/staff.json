@@ -1,8 +1,38 @@
 [
 {
-    "name": "Derek",
+    "name": "Minh Phan (Course Lead)",
     "id": 1,
+    "image": "images/minh_staff_image.PNG",
+    "description": "Rust Evangelical Strike ForceTM. Loves everything Rust and system related."
+},
+{
+    "name": "Quan Hao NG (Course Lead)",
+    "id": 2,
+    "image": "images/quan-hao_staff_image.jpg",
+    "description": "Likes Rust and OSes."
+},
+{
+    "name": "Derek Warner",
+    "id": 3,
     "image": "images/derek_staff_image.jpg",
-    "description": "I'm da best"
+    "description": "Loves everything to do with data and code optimizing in Rust and Python"
+},
+{
+    "name": "Daniel Philipov",
+    "id": 4,
+    "image": "images/daniel_staff_image.png",
+    "description": "Sophomore in Computer Science, double majoring with Physics. Loves Rust and Python, and loves optimizing code."
+},
+{
+    "name": "Porter Shawver",
+    "id": 5,
+    "image": "images/porter_staff_image.jpg",
+    "description": "Low-key loves letting loose with low-level languages. Senior; CS major; math minor."
+},
+{
+    "name": "Sohum Sharma",
+    "id": 6,
+    "image": "images/sohum_staff_image.jpg",
+    "description": "CS Sophomore and Rust enthusiast."
 }
 ]
