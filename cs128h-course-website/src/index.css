@@ -302,6 +302,10 @@ a:hover {
   transform: scale(1.01);
 }
 
+.collapsibleShown:hover {
+  transform: none;
+}
+
 .content {
   display: none;
   background-color: var(--background-100);
