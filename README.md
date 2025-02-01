@@ -7,3 +7,22 @@
 ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
 
 The course website for CS128H at UIUC, an introductory, student-run, course about Rust.
+
+## Features
+- [ ] Home Page
+  - [X] Styling/Welcome Page
+  - [ ] Discord Announcements Syncing
+- [X] Course Info Page
+  - [X] Dropdown menus
+  - [X] Syllabus
+  - [X] Schedule
+  - [ ] Grade Calculator
+- [ ] Staff Page
+  - [X] Staff Images
+  - [X] Staff Descriptions
+  - [X] JSON Parsing Data Retrieval
+  - [ ] Office Hours
+- [ ] Lectures Page
+  - [ ] Videoplayer
+  - [ ] JSON Parsing Data Retrieval
+  - [ ] Multiple Choice Questions
