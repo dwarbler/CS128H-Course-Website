@@ -6,4 +6,4 @@
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
 
-The course website for CS128H at UIUC, a course about Rust.
+The course website for CS128H at UIUC, an introductory, student-run, course about Rust.
