@@ -1,14 +1,14 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
+import Home from './pages/Home.tsx'
 import CourseInfo from './pages/CourseInfo.tsx'
-import Lectures from './pages/Lectures'
-import Grades from './pages/Grades'
-import Staff from './pages/Staff'
+import Lectures from './pages/Lectures.tsx'
+import Grades from './pages/Grades.tsx'
+import Staff from './pages/Staff.tsx'
 import NoPage from './pages/NoPage.tsx'
 
-import './index.css'
+import '../index.css'
 
 /**
  * Utilizes React BrowserRouter to navigate through the various pages
