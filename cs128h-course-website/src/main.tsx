@@ -4,11 +4,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home.tsx'
 import CourseInfo from './pages/CourseInfo.tsx'
 import Lectures from './pages/Lectures.tsx'
-import Grades from './pages/Grades.tsx'
 import Staff from './pages/Staff.tsx'
 import NoPage from './pages/NoPage.tsx'
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
+import { AppSidebar } from "@/components/Sidebar.tsx"
 
-import '../index.css'
+import './index.css'
 
 /**
  * Utilizes React BrowserRouter to navigate through the various pages
@@ -21,15 +22,20 @@ import '../index.css'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/CourseInfo" element={<CourseInfo />} />
-        <Route path="/Lectures" element={<Lectures />} />
-        <Route path="/Grades" element={<Grades />} />
-        <Route path="/Staff" element={<Staff />} />
-        <Route path="*" element={<NoPage />} />
-      </Routes>
+      <SidebarProvider>
+        <AppSidebar />
+        <main>
+          <SidebarTrigger />
+        </main>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/CourseInfo" element={<CourseInfo />} />
+          <Route path="/Lectures" element={<Lectures />} />
+          <Route path="/Staff" element={<Staff />} />
+          <Route path="*" element={<NoPage />} />
+        </Routes>
+      </SidebarProvider>
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode >,
 )
