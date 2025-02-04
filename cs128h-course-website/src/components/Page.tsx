@@ -12,7 +12,7 @@ import {
     SidebarTrigger,
 } from "@/components/ui/sidebar"
 
-export default function Page(title: string, body: JSX.Element) {
+export function Page({ ...props }): JSX.Element {
     return (
         <>
             <AppSidebar />
@@ -27,12 +27,12 @@ export default function Page(title: string, body: JSX.Element) {
                             </BreadcrumbItem>
                             <BreadcrumbSeparator className="hidden md:block" />
                             <BreadcrumbItem>
-                                <BreadcrumbPage>{title}</BreadcrumbPage>
+                                <BreadcrumbPage>{props.title}</BreadcrumbPage>
                             </BreadcrumbItem>
                         </BreadcrumbList>
                     </Breadcrumb>
                 </header>
-                {body}
+                {props.body}
             </SidebarInset>
         </>
     )
