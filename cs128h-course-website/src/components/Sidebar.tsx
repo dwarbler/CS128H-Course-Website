@@ -1,4 +1,4 @@
-import { Calendar, Home, Info, Lectern, UserRound, ChevronRight } from "lucide-react"
+import { Calendar, Home, Info, Lectern, UserRound, ChevronRight, ArrowUpRight } from "lucide-react"
 import { Link } from "react-router-dom"
 
 import {
@@ -23,15 +23,8 @@ import {
 const sidebar_items = [
     {
         title: "Home",
-        url: "/",
+        url: "/CourseInfo",
         icon: Home,
-        subitems: [
-            {
-                title: "Hello",
-                url: "/",
-                isActive: false
-            }
-        ]
     },
     {
         title: "Course Info",
@@ -49,7 +42,13 @@ const sidebar_items = [
         title: "Lectures",
         url: "/Lectures",
         icon: Lectern,
-        subitems: []
+        subitems: [
+            {
+                title: "Hello",
+                url: "/",
+                isActive: false
+            }
+        ]
     },
     {
         title: "Course Staff",
@@ -75,7 +74,9 @@ export function AppSidebar() {
                                         <SidebarMenuButton tooltip={item.title}>
                                             {item.icon && <item.icon />}
                                             <span>{item.title}</span>
-                                            <ChevronRight className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-90" />
+                                            {item.subitems ? (
+                                                <ChevronRight className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-90" />
+                                            ) : <Link to={item.url} className="ml-auto padding-0"><ArrowUpRight size={16} /></Link>}
                                         </SidebarMenuButton>
                                     </CollapsibleTrigger>
                                     {item.subitems?.length ? (
