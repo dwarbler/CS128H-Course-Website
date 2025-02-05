@@ -13,6 +13,7 @@ import {
     SidebarMenuSub,
     SidebarMenuSubButton,
     SidebarMenuSubItem,
+    SidebarSeparator,
 } from "@/components/ui/sidebar"
 import {
     Collapsible,
@@ -76,11 +77,11 @@ export function AppSidebar() {
                         </SidebarMenuItem>
                     </SidebarMenu>
                 </SidebarHeader>
-                <SidebarGroup>
+                <SidebarGroup className="py-0">
                     <SidebarMenu>
                         {sidebar_items.map((item, index) => (
                             <Collapsible key={item.title} defaultOpen={index == 1} className={"group/collapsible"}>
-                                <SidebarMenuItem>
+                                <SidebarMenuItem className="py-1">
                                     <CollapsibleTrigger asChild>
                                         <SidebarMenuButton tooltip={item.title} asChild={(item.subitems) ? false : true}>
                                             {item.subitems ? (
@@ -112,6 +113,7 @@ export function AppSidebar() {
                                         </CollapsibleContent>
                                     ) : null}
                                 </SidebarMenuItem>
+                                <SidebarSeparator className="mx-0" />
                             </Collapsible>
                         ))}
                     </SidebarMenu>
