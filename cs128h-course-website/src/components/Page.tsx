@@ -25,10 +25,12 @@ export function Page({ ...props }): JSX.Element {
                             <BreadcrumbItem className="hidden md:block">
                                 <BreadcrumbPage>Home</BreadcrumbPage>
                             </BreadcrumbItem>
-                            <BreadcrumbSeparator className="hidden md:block" />
-                            <BreadcrumbItem>
-                                <BreadcrumbPage>{props.title}</BreadcrumbPage>
-                            </BreadcrumbItem>
+                            {(props.breadcrumb) ? (<>
+                                <BreadcrumbSeparator className="hidden md:block" />
+                                <BreadcrumbItem>
+                                    <BreadcrumbPage>{props.title}</BreadcrumbPage>
+                                </BreadcrumbItem>
+                            </>) : null}
                         </BreadcrumbList>
                     </Breadcrumb>
                 </header>
