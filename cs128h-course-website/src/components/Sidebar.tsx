@@ -63,7 +63,7 @@ export function AppSidebar() {
             <SidebarContent>
                 <SidebarHeader className="h-16 border-b border-sidebar-border">
                     <SidebarMenu className="mt-auto mb-auto">
-                        <SidebarMenuButton size="lg">
+                        <SidebarMenuButton size="lg" className="pointer-events-none">
                             <img src={Logo} alt="Course Logo" className="mr-auto size-8" />
                             <div className="grid flex-1 text-left text-sm leading-tight">
                                 <span className="truncate font-semibold">128 Honors</span>
