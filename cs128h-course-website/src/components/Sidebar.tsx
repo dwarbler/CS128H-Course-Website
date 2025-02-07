@@ -65,16 +65,14 @@ export function AppSidebar() {
         <Sidebar collapsible="icon">
             <SidebarContent>
                 <SidebarHeader className="h-16 border-b border-sidebar-border">
-                    <SidebarMenu>
-                        <SidebarMenuItem>
-                            <SidebarMenuButton size="lg">
-                                <img src={Logo} alt="Course Logo" className="mr-auto size-8" />
-                                <div className="grid flex-1 text-left text-sm leading-tight">
-                                    <span className="truncate font-semibold">128 Honors</span>
-                                    <span className="truncate text-xs">CS@Illinois</span>
-                                </div>
-                            </SidebarMenuButton>
-                        </SidebarMenuItem>
+                    <SidebarMenu className="mt-auto mb-auto">
+                        <SidebarMenuButton size="lg">
+                            <img src={Logo} alt="Course Logo" className="mr-auto size-8" />
+                            <div className="grid flex-1 text-left text-sm leading-tight">
+                                <span className="truncate font-semibold">128 Honors</span>
+                                <span className="truncate text-xs">CS@Illinois</span>
+                            </div>
+                        </SidebarMenuButton>
                     </SidebarMenu>
                 </SidebarHeader>
                 <SidebarGroup className="py-0">
