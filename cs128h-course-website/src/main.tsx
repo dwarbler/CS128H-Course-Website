@@ -22,7 +22,7 @@ createRoot(document.getElementById('root')!).render(
     <SidebarProvider>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
         <Route path="/CourseInfo" element={<CourseInfo />} />
         <Route path="/Lectures" element={<Lectures />} />
         <Route path="/Staff" element={<Staff />} />

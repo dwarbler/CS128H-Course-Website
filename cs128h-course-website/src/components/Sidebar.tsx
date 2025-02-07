@@ -32,13 +32,11 @@ const sidebar_items = [
         title: "Course Info",
         url: "/CourseInfo",
         icon: Info,
-        subitems: []
     },
     {
         title: "Course Calendar",
         url: "#",
         icon: Calendar,
-        subitems: []
     },
     {
         title: "Lectures",
@@ -56,7 +54,6 @@ const sidebar_items = [
         title: "Course Staff",
         url: "/Staff",
         icon: UserRound,
-        subitems: []
     },
 ]
 

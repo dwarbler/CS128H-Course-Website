@@ -41,7 +41,7 @@ export default function Policies(): JSX.Element {
             </table>
 
             <p>
-                <i>Note</i>: CS128Honors follows satisfactory/unsatisfactory (S/U) grading. Students must receieve at minimum a 70% (C-) to receieve a satisfactory grade. We may lower, but not raise, the cutoff for SU credit.
+                <i>Note</i>: CS128Honors follows satisfactory/unsatisfactory (S/U) grading. Students must receive at minimum a 70% (C-) to receive a satisfactory grade. We may lower, but not raise, the cutoff for SU credit.
             </p>
 
             <h4>Extension Policy</h4>
@@ -51,7 +51,7 @@ export default function Policies(): JSX.Element {
             </p>
 
             <p>
-            Late assignments will not be accepted outside of extreme circumstances. If students cannot complete a mandatory course obligation, they should notify Minh Phan (minhnp2@illinois.edu) or Quan Hao Ng (qhng2@illinois.edu) with a reason why. We generally accept excuses with evidence as provided by the <a href="https://studentcode.illinois.edu/article1/part5/1-501/">Student Code</a>.
+                Late assignments will not be accepted outside of extreme circumstances. If students cannot complete a mandatory course obligation, they should notify Minh Phan (minhnp2@illinois.edu) or Quan Hao Ng (qhng2@illinois.edu) with a reason why. We generally accept excuses with evidence as provided by the <a href="https://studentcode.illinois.edu/article1/part5/1-501/">Student Code</a>.
             </p>
 
             <h4> Academic Integrity </h4>
@@ -66,7 +66,7 @@ export default function Policies(): JSX.Element {
                 </p>
                 <cite>-CS 341</cite>
             </blockquote>
-            
+
             <p>
                 For your final project, cite all external code that you use.
             </p>
