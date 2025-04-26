@@ -15,10 +15,10 @@ export function Page({ ...props }): JSX.Element {
     <>
       <AppSidebar />
       <SidebarInset>
-        <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4">
-          <SidebarTrigger className="-m1-1" />
-          <Separator orientation="vertical" className="mr-2 h-4" />
-          <div className="flex justify-between items-center size-full">
+        <header className="flex h-16 shrink-0 items-center gap-0 border-b pl-4">
+          <SidebarTrigger />
+          <Separator orientation="vertical" className="h-4 ml-4" />
+          <div className="flex justify-between items-center size-full p-4">
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem className="hidden md:block">

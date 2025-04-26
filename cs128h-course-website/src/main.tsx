@@ -21,7 +21,7 @@ import "./index.css";
 createRoot(document.getElementById("root")!).render(
   <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
     <BrowserRouter>
-      <SidebarProvider>
+      <SidebarProvider defaultOpen={false}>
         <Routes>
           <Route index element={<Home />} />
           <Route path="/Home" element={<Home />} />
